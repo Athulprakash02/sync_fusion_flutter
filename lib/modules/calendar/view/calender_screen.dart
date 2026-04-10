@@ -12,15 +12,13 @@ class CalendarScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Device Calendar Events')),
-      body: Obx(() {
-        return SfCalendar(
+      body: SfCalendar(
           view: CalendarView.month,
           dataSource: MeetingDataSource(controller.appointments),
           monthViewSettings: MonthViewSettings(
             showAgenda: true,
           ),
-        );
-      }),
+        )
     );
   }
 }
