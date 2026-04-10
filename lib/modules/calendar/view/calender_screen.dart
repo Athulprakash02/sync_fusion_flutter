@@ -64,7 +64,7 @@ class CalendarScreen extends StatelessWidget {
 
           monthViewSettings: const MonthViewSettings(
             showAgenda: true,
-            agendaViewHeight: 200,
+            // agendaViewHeight: 200,
             appointmentDisplayMode: MonthAppointmentDisplayMode.indicator,
           ),
 
